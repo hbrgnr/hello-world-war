@@ -8,6 +8,19 @@
 	<name>Hello World Web Application Repository</name>
 	<description>Simplest possible Java Webapp</description>
 
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<name>releases</name>
+			<url>http://docker-3:8081/repository/maven-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>snapshots</name>
+			<url>http://docker-3:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+	
 	<build>
 		<plugins>
 			<plugin>
